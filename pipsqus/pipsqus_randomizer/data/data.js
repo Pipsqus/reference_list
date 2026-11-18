@@ -18,7 +18,7 @@ let solasta_data = {
 		"Human" : 
 			["Aasimar",
 			"Warforged",
-			"Wildling"],
+			"Tabaxi"],
 		"Dwarf" : 
 			["Hill Dwarf",
 			"Snow Dwarf",
@@ -65,7 +65,7 @@ let solasta_data = {
 			"Mephistopheles Tiefling",
 			"Feral Tiefling",
 			"Zariel Tiefling"],
-		"Wendigo" : 
+		"Bugbear" : 
 			[""],
 		"Wyrmkin" : 
 			["Cave Wyrmkin",

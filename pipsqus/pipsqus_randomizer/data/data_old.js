@@ -2,13 +2,88 @@ let solasta_data = {
 	game_name : "solasta",
 	classes_to_roll : 4,
 	companions_to_roll : 0,
+	races_to_roll : 4,
 
-	multiclass_chance : 55,
+	multiclass_chance : 0,
 	multiclass_maxTotal : 0,
+	multiclass_options_to_grant: 0,
+	multiclass_selection_text: "~ Multiclass Options ~",
 	
 	has_subclasses : true,
+	has_subraces : true,
 
 	companion_options : false,
+	
+	races_options : {
+		"Human" : 
+			["Aasimar",
+			"Warforged",
+			"Wildling"],
+		"Dwarf" : 
+			["Hill Dwarf",
+			"Snow Dwarf",
+			"Obsidian Dwarf",
+			"Gray Dwarf",
+			"Ironborn Dwarf",],
+		"Elf" : 
+			["High Elf",
+			"Sylvan Elf",
+			"Dark Elf",
+			"Shadar-Kai",],
+		"Fairy" : 
+			[""],
+		"Firbolg" : 
+			[""],
+		"Half-Elf" : 
+			["High Half-Elf",
+			"Sylvan Half-Elf",
+			"Dark Half-Elf"],
+		"Gnome" : 
+			["Rock Gnome",
+			"Shadow Gnome",
+			],
+		"Half-Orc" : 
+			[""],
+		"Goliath" : 
+			[""],
+		"Halfling" : 
+			["Island Halfling",
+			"Marsh Halfling"],
+		"Imp" : 
+			["Badland Imp",
+			"Forest Imp",
+			"Infernal Imp"],
+		"Kobold" : 
+			["Dark Kobold",
+			"Draconic Kobold"],
+		"Lizardfolk" : 
+			[""],
+		"Oni" : 
+			[""],
+		"Tiefling" : 
+			["Devil`s Tongue",
+			"Mephistopheles Tiefling",
+			"Feral Tiefling",
+			"Zariel Tiefling"],
+		"Wendigo" : 
+			[""],
+		"Wyrmkin" : 
+			["Cave Wyrmkin",
+			"Crystal Wyrmkin",
+			"High Wyrmkin"],
+		"Dragonborn" : 
+			["Black Dragonborn",
+			"Blue Dragonborn",
+			"Brass Dragonborn",
+			"Bronze Dragonborn",
+			"Copper Dragonborn",
+			"Gold Dragonborn",
+			"Green Dragonborn",
+			"Red Dragonborn",
+			"Silver Dragonborn",
+			"White Dragonborn"],
+	},
+	
 	character_options : {
 		caster_arcane : {
 			"Artificer" : 
@@ -190,12 +265,56 @@ let bg3_data = {
 	multiclass_chance : 55,
 	multiclass_maxTotal : 2,
 	multiclass_options_to_grant: 3,
-	multiclass_selection_text: "~ Multiclass Oasdasdsdptions ~",
+	multiclass_selection_text: "~ Multiclass Options ~",
 	
 	has_subclasses : true,
+	has_subraces : true,
 	
-	races_options : ["Human", "Elf", "Drow", "Half-Elf", "Half-Orc", "Halfling", "Dwarf", "Gnome", "Tiefling", "Githyanki", "Dragonborn"],
 	companion_options : ["Astarion", "Gale", "Karlach", "Lae\'zel", "Shadowheart", "Wyll", "Halsin", "Jaheira", "Minsc", "Minthara"],
+	races_options : {
+		"Human" : 
+			[""],
+		"Elf" : 
+			["High Elf",
+			"Wood Elf"],
+		"Drow" :
+			["Lolth-Sworn",
+			"Seldarine Drow"],
+		"Half-Elf" : 
+			["High Half-Elf",
+			"Wood Half-Elf",
+			"Drow Half-Elf"],
+		"Half-Orc" : 
+			[""],
+		"Halfling" : 
+			["Lightfoot Halfling",
+			"Strongheart Halfling"],
+		"Dwarf" : 
+			["Gold Dwarf",
+			"Shield Dwarf",
+			"Duergar"],
+		"Gnome" : 
+			["Forest Gnome",
+			"Deep Gnome",
+			"Rock Gnome"],
+		"Tiefling" : 
+			["Asmodeus Tiefling",
+			"Mephistopheles Tiefling",
+			"Zariel Tiefling"],
+		"Githyanki" : 
+			[""],
+		"Dragonborn" : 
+			["Black Dragonborn",
+			"Blue Dragonborn",
+			"Brass Dragonborn",
+			"Bronze Dragonborn",
+			"Copper Dragonborn",
+			"Gold Dragonborn",
+			"Green Dragonborn",
+			"Red Dragonborn",
+			"Silver Dragonborn",
+			"White Dragonborn"],
+	},
 	character_options : {
 		caster_arcane : {
 			"Warlock" : 
@@ -285,14 +404,19 @@ let bg3_data = {
 let sunderfolk_data = {
 	game_name : "sunderfolk",
 	classes_to_roll : 4,
-	companions_to_roll : 4,
+	companions_to_roll : 0,
+	races_to_roll : 0,
 
 	multiclass_chance : 0,
 	multiclass_maxTotal : 0,
+	multiclass_options_to_grant: 0,
+	multiclass_selection_text: "~ Multiclass Options ~",
 	
 	has_subclasses : false,
+	has_subraces : false,
 	
-	companion_options : false,
+	companion_options : [],
+	races_options : {},
 	character_options : {
 		caster_arcane : {
 			"Arcanist" : 
@@ -327,14 +451,33 @@ let roguetrader_data = {
 	game_name : "roguetrader",
 	classes_to_roll : 5,
 	companions_to_roll : 4,
+	races_to_roll : 1,
 
 	multiclass_chance : 0,
 	multiclass_maxTotal : 0,
+	multiclass_options_to_grant: 0,
 	multiclass_selection_text: "~ Multiclass Options ~",
 	
 	has_subclasses : true,
-
+	has_subraces : false,
+	
 	companion_options : ["Abelard", "Idira", "Argenta", "Cassia", "Pasqal", "Heinrix", "Jae", "Yrliet", "Marazhai", "Ulfar", "Kibellah", "Solomorne", "Eogunn"],
+	races_options :	{
+		"Astra Militarum Commander" : 
+			[""],
+		"Commissar" : 
+			[""],
+		"Crime Lord" :
+			[""],
+		"Ministorum Priest" : 
+			[""],
+		"Navy Officer" : 
+			[""],
+		"Noble" : 
+			[""],
+		"Sanctioned Psyker" : 
+			[""],
+	},
 	character_options : {
 		frontline : {
 			"Bladedancer" : 
@@ -391,4 +534,654 @@ let roguetrader_data = {
 	}
 };
 
-const games_array = [bg3_data, sunderfolk_data, solasta_data, roguetrader_data];
+let pillars1_data = {
+	game_name : "pillars1",
+	classes_to_roll : 1,
+	companions_to_roll : 3,
+	races_to_roll : 1,
+
+	multiclass_chance : 0,
+	multiclass_maxTotal : 0,
+	multiclass_options_to_grant: 0,
+	multiclass_selection_text: "~ Multiclass Options ~",
+	
+	has_subclasses : false,
+	has_subraces : true,
+	
+	companion_options : ["Aloth", "Edér", "Kana", "Durance", "Sagani", "Grieving Mother", "Hiravias", "Pallegina", "Devil of Caroc", "Zahua", "Maneha"],
+	races_options : {
+		"Aumaua" : 
+			["Coastal Aumaua",
+			"Island Aumaua"],
+		"Dwarf" : 
+			["Mountain Dwarf",
+			"Boreal Dwarf"],
+		"Elf" :
+			["Wood Elf",
+			"Pale Elf"],
+		"Godlike" : 
+			["Death Godlike",
+			"Fire Godlike",
+			"Nature Godlike",
+			"Moon Godlike"],
+		"Human" : 
+			["Meadow Folk",
+			"Ocean Folk",
+			"Savannah Folk"],
+		"Orlan" : 
+			["Hearth Orlan",
+			"Wild Orlan"],
+	},
+	character_options : {
+		all_classes : {
+			"Barbarian" : 
+				[""],
+			"Chanter" :
+				[""],
+			"Cipher" :
+				[""],
+			"Druid" :
+				[""],
+			"Fighter" :
+				[""],
+			"Monk" :
+				[""],
+			"Paladin" :
+				[""],
+			"Priest" :
+				[""],
+			"Ranger" :
+				[""],
+			"Rogue" : 
+				[""],
+			"Wizard" : 
+				[""]
+		},
+	}
+};
+
+let deadfire_data = {
+	game_name : "deadfire",
+	classes_to_roll : 4,
+	companions_to_roll : 3,
+	races_to_roll : 1,
+
+	multiclass_chance : 100,
+	multiclass_maxTotal : 4,
+	multiclass_options_to_grant: 4,
+	multiclass_selection_text: "~ Multiclass Options ~",
+	
+	has_subclasses : true,
+	has_subraces : true,
+	
+	companion_options : ["Aloth", "Edér", "Maia", "Pallegina", "Serafen", "Tekehu", "Xoti", "Vatnir", "Ydwin", "Fassina", "Mirke", "Rekke", "Konstanten"],
+	
+	races_options : {
+		"Aumaua" : 
+			["Coastal Aumaua",
+			"Island Aumaua"],
+		"Dwarf" : 
+			["Mountain Dwarf",
+			"Boreal Dwarf"],
+		"Elf" :
+			["Wood Elf",
+			"Pale Elf"],
+		"Godlike" : 
+			["Death Godlike",
+			"Fire Godlike",
+			"Nature Godlike",
+			"Moon Godlike"],
+		"Human" : 
+			["Meadow Folk",
+			"Ocean Folk",
+			"Savannah Folk"],
+		"Orlan" : 
+			["Hearth Orlan",
+			"Wild Orlan"],
+	},
+	
+	character_options : {
+		all_classes : {
+			"Barbarian" : 
+				["Berserker", 
+				"Corpse-Eater", 
+				"Mage Slayer", 
+				"Fury Shaper"
+				],
+			"Chanter" :
+				["Beckoner",
+				"Skald",
+				"Troubadour",
+				"Bellower"
+				],
+			"Cipher" :
+				["Ascendant",
+				"Beguiler",
+				"Soul Blade",
+				"Psion"
+				],
+			"Druid" :
+				["Fury",
+				"Lifegiver",
+				"Shifter",
+				"Animist",
+				"Ancient"
+				],
+			"Fighter" :
+				["Black Jacket",
+				"Devoted",
+				"Unbroken",
+				"Tactician"
+				],
+			"Monk" :
+				["Helwalker",
+				"Nalpazca",
+				"Shattered Pillar",
+				"Forbidden Fist"
+				],
+			"Paladin" :
+				["Bleak Walkers",
+				"Darcozzi Paladini",
+				"Goldpact Knights",
+				"Kind Wayfarers",
+				"The Shieldbearers of St. Elcga",
+				"The Steel Garrote"
+				],
+			"Priest" :
+				["Berath",
+				"Eothas",
+				"Magran",
+				"Skaen",
+				"Wael",
+				"Woedica"
+				],
+			"Ranger" :
+				["Sharpshooter",
+				"Ghost Heart",
+				"Stalker",
+				"Arcane Archer",
+				],
+			"Rogue" : 
+				["Assassin", 
+				"Streetfighter", 
+				"Trickster", 
+				"Debonaire",
+				],
+			"Wizard" : 
+				["Arcanist", 
+				"Sorcerer", 
+				"Necromancer", 
+				]
+		},
+	}
+};
+
+let kingmaker_data = {
+	game_name : "kingmaker",
+	classes_to_roll : 5,
+	companions_to_roll : 4,
+	races_to_roll : 1,
+
+	multiclass_chance : 65,
+	multiclass_maxTotal : 3,
+	multiclass_options_to_grant: 4,
+	multiclass_selection_text: "~ Multiclass Options ~",
+	
+	has_subclasses : true,
+	has_subraces : true,
+	
+	companion_options : ["Amiri", "Jubilost", "Valerie", "Octavia", "Regongar", "Ekundayo", "Nok-Nok", "Harrim", "Tristian", "Jaethal", "Linzi", "Kalikke", "Kanerah"],
+	races_options : {
+		"Human" : 
+			["Basic"],
+		"Elf" : 
+			["Basic"],
+		"Dwarf" :
+			["Basic"],
+		"Gnome" : 
+			["Basic"],
+		"Halfling" : 
+			["Basic"],
+		"Half-Elf" : 
+			["Basic"],
+		"Half-Orc" : 
+			["Basic"],
+		"Aasimar" : 
+			["Basic",
+			"Angelkin",
+			"Emberkin",
+			"Idyllkin",
+			"Lawbringer",
+			"Musetouched",
+			"Plumethkith"],
+		"Tiefling" : 
+			["Basic",
+			"Beastbrood",
+			"Faultspawn",
+			"Foulspawn",
+			"Grimspawn",
+			"Hellspawn",
+			"Hungerseed",
+			"Motherless",
+			"Pitborn",
+			"Shackleborn",
+			"Spitespawn",],
+	},
+	character_options : {
+		all_classes : {
+			"Alchemist" : 
+				["Chirurgeon", 
+				"Grenadier", 
+				"Vivisectionist"
+				],
+			"Barbarian" :
+				["Armored Hulk",
+				"Mad Dog",
+				"Invulnerable Rager"
+				],
+			"Bard" :
+				["Archaeologist",
+				"Flame Dancer",
+				"Thunder Caller"
+				],
+			"Cleric" :
+				["Herald Caller",
+				"Ecclesitheurge",
+				"Crusader"
+				],
+			"Druid" :
+				["Blight Druid",
+				"Defender of the True World",
+				"Feyspeaker"
+				],
+			"Fighter" :
+				["Aldori Defender",
+				"Tower Shield Specialist",
+				"Two-Handed Fighter"
+				],
+			"Inquisitor" :
+				["Sacred Huntsmaster",
+				"Monster Tactitian ",
+				"Tactical Leader"
+				],
+			"Kineticist" :
+				["Dark Elementalist",
+				"Psychokineticist",
+				"Kinetic Knight"
+				],
+			"Magus" :
+				["Eldritch Archer",
+				"Eldritch Scion",
+				"Sword Saint"
+				],
+			"Monk" : 
+				["Scaled Fist", 
+				"Sensei", 
+				"Traditional Monk"
+				],
+			"Paladin" : 
+				["Divine Hunter", 
+				"Divine Guardian", 
+				"Hospitaler" 
+				],
+			"Ranger" : 
+				["Freebooter", 
+				"Flamewarden", 
+				"Stormwalker" 
+				],
+			"Rogue" : 
+				["Eldritch Scoundrel", 
+				"Knife Master", 
+				"Thug" 
+				],
+			"Slayer" : 
+				["Vanguard", 
+				"Deliverer", 
+				"Spawn Slayer" 
+				],
+			"Sorcerer" : 
+				["Empyreal Sorcerer", 
+				"Sage Sorcerer", 
+				"Sylvan Sorcerer" 
+				],
+			"Wizard" : 
+				["Scroll Savant", 
+				"Arcane Bomber", 
+				"Thassilonian Specialist" 
+				]
+		},
+	}
+};
+
+let wrathoftherighteous_data = {
+	game_name : "wrathoftherighteous",
+	classes_to_roll : 5,
+	companions_to_roll : 4,
+	races_to_roll : 1,
+
+	multiclass_chance : 65,
+	multiclass_maxTotal : 3,
+	multiclass_options_to_grant: 5,
+	multiclass_selection_text: "~ Multiclass Options ~",
+	
+	has_subclasses : true,
+	has_subraces : true,
+	
+	companion_options : ["Camellia", "Seelah", "Lann", "Ember", "Arueshalae", "Woljif", "Daeran", "Sosiel", "Regill", "Wenduag", "Nenio", "Greybor", "Ulbrig"],
+	
+	races_options : {
+		"Human" : 
+			[""],
+		"Elf" : 
+			["Basic",
+			"Blightborn",
+			"Loremaster"],
+		"Dwarf" :
+			["Basic",
+			"Barrow Dwarf",
+			"Unstoppable Dwarf"],
+		"Gnome" : 
+			["Basic",
+			"Pyromaniac",
+			"Traveler"],
+		"Halfling" : 
+			["Basic",
+			"Craven",
+			"Hasty"],
+		"Half-Elf" : 
+			["Basic",
+			"Dual Heritage",
+			"Kindred-Raised"],
+		"Half-Orc" : 
+			["Basic",
+			"Human-Raised",
+			"Tribal"],
+		"Aasimar" : 
+			["Basic",
+			"Angelkin",
+			"Emberkin",
+			"Idyllkin",
+			"Lawbringer",
+			"Musetouched",
+			"Plumethkith"],
+		"Tiefling" : 
+			["Basic",
+			"Beastbrood",
+			"Faultspawn",
+			"Foulspawn",
+			"Grimspawn",
+			"Hellspawn",
+			"Hungerseed",
+			"Motherless",
+			"Pitborn",
+			"Shackleborn",
+			"Spitespawn",],
+		"Oread" : 
+			["Basic",
+			"Gemsoul",
+			"Ironsoul"],
+		"Dhampir" : 
+			["Basic",
+			"Jianh-Shi-Born",
+			"Moroi-Born",
+			"Nosferatu-Born",
+			"Vampire King-Born",
+			"Vetala-Born",],
+		"Kitsune" : 
+			["Basic",
+			"Keen Kitsune"],
+	},
+	
+	character_options : {
+		all_classes : {
+			"Alchemist" : 
+				["Chirurgeon", 
+				"Grenadier", 
+				"Vivisectionist",
+				"Preservationist",
+				"Metamorph",
+				"Incense Synthesizer",
+				"Reanimator"
+				],
+			"Arcanist" :
+				["Brown-fur Transmuter",
+				"Eldritch Font",
+				"Unlettered Arcanist",
+				"White Mage",
+				"Nature Mage",
+				"Phantasmal Mage",
+				"Magic Deceiver"
+				],
+			"Barbarian" :
+				["Armored Hulk",
+				"Mad Dog",
+				"Invulnerable Rager",
+				"Beastkin Berserker",
+				"Pack Rager",
+				"Instinctual Warrior",
+				"Flesheater"
+				],
+			"Bard" :
+				["Archaeologist",
+				"Flame Dancer",
+				"Thunder Caller",
+				"Tranquil Whisperer",
+				"Dirge Bard",
+				"Beast Tamer",
+				"Chelaxian Diva"
+				],
+			"Bloodrager" :
+				["Bloodrider",
+				"Greenrager",
+				"Primalist",
+				"Spelleater",
+				"Reformed Fiend",
+				"Steelblood",
+				"Mixed-Blood Rager",
+				"Rag-Riven"
+				],
+			"Cavalier" :
+				["Beast Rider",
+				"Disciple of the Pike",
+				"Knight of the Wall",
+				"Gendarme",
+				"Standard Bearer",
+				"Fearsome Leader",
+				"Cavalier of the Paw",
+				"Ghost Rider"
+				],
+			"Cleric" :
+				["Herald Caller",
+				"Ecclesitheurge",
+				"Crusader",
+				"Demonbane Priest",
+				"Angelfire Apostle",
+				"Priest of Balance",
+				"Separatist"
+				],
+			"Druid" :
+				["Blight Druid",
+				"Defender of the True World",
+				"Feyspeaker",
+				"Drovier",
+				"Elemental Rampager",
+				"Primal Druid",
+				"Winter Child"
+				],
+			"Fighter" :
+				["Aldori Defender",
+				"Tower Shield Specialist",
+				"Two-Handed Fighter",
+				"Dragonheir Scion",
+				"Armiger",
+				"Mutation Warrior",
+				"Titan Fighter"
+				],
+			"Hunter" :
+				["Divine Hunter",
+				"Urban Hunter",
+				"Colluding Scoundrel",
+				"Forester",
+				"Wandering Marksman",
+				"Divine Hound",
+				"Tandem Executioner"
+				],
+			"Inquisitor" :
+				["Sacred Huntsmaster",
+				"Monster Tactitian ",
+				"Tactical Leader",
+				"Faith Hunter",
+				"Sanctified Slayer",
+				"Judge",
+				"Living Grimoire"
+				],
+			"Kineticist" :
+				["Dark Elementalist",
+				"Psychokineticist",
+				"Kinetic Knight",
+				"Blood Kineticist",
+				"Overwhelming Sould",
+				"Elemental Engine",
+				"Kinetic Sharpshooter"
+				],
+			"Magus" :
+				["Eldritch Archer",
+				"Eldritch Scion",
+				"Sword Saint",
+				"Hexcrafter",
+				"Armored Battlemage",
+				"Arcane Rider",
+				"Spell Dancer",
+				"Bladebound"
+				],
+			"Monk" : 
+				["Scaled Fist", 
+				"Sensei", 
+				"Traditional Monk",
+				"Zen Archer",
+				"Sohei",
+				"Quarterstaff Master",
+				"Student of Stone",
+				"Drunken Master"
+				],
+			"Oracle" :
+				["Lone Strider",
+				"Enlightened Philosopher",
+				"Divine Herbalist",
+				"Seeker",
+				"Possessed Oracle",
+				"Purifier",
+				"Wind Whisperer",
+				"Dual-Cursed Oracle"
+				],
+			"Paladin" : 
+				["Divine Hunter", 
+				"Divine Guardian", 
+				"Hospitaler",
+				"Warrior of the Holy Light",
+				"Martyr",
+				"Divine Scion",
+				"Stonelord",
+				"Tortured Crusader" 
+				],
+			"Ranger" : 
+				["Freebooter", 
+				"Flamewarden", 
+				"Stormwalker",
+				"Espionage Expert",
+				"Demonslayer",
+				"Nomad",
+				"Sable Company Marine" 
+				],
+			"Rogue" : 
+				["Eldritch Scoundrel", 
+				"Knife Master", 
+				"Thug",
+				"Sylvan Trickster",
+				"Underground Chemist",
+				"Rowdy",
+				"Master of All",
+				"Dark Lurker"
+				],
+			"Shaman" :
+				["Possessed Shaman",
+				"Spirit Hunter",
+				"Spirit Warden",
+				"Unsworn Shaman",
+				"Witch Doctor",
+				"Wildland Shaman",
+				"Shadow Shaman",
+				"Prophet of Pestilence"
+				],
+			"Shifter" :
+				["Child of Manticore",
+				"Dragonblood Shifter",
+				"Feyform Shifter",
+				"Fiendflesh Shifter",
+				"Rageshaper",
+				"Wild Effigy",
+				"Weretouched"
+				],
+			"Skald" :
+				["Battle Scion",
+				"Court Poet",
+				"Demon Dancer",
+				"Herald of the Horn",
+				"Hunt Caller",
+				"Battle Singer",
+				"Inciter"
+				],
+			"Slayer" : 
+				["Vanguard", 
+				"Deliverer", 
+				"Spawn Slayer",
+				"Arcane Enforcer",
+				"Executioner",
+				"Stygian Slayer",
+				"Imitator",
+				"Bloodseeker"
+				],
+			"Sorcerer" : 
+				["Empyreal Sorcerer", 
+				"Sage Sorcerer", 
+				"Sylvan Sorcerer",
+				"Crossblooded",
+				"Seeker - Sorcerer",
+				"Nine Tailed Heir",
+				"Overwhelming Mage",
+				"Geomancer" 
+				],
+			"Warpriest" :
+				["Cult Leader",
+				"Feral Champion",
+				"Disenchanter",
+				"Shieldbearer",
+				"Proclaimer",
+				"Champion of the Faith",
+				"Mantis Zealot"
+				],
+			"Witch" :
+				["Stigmatized Witch",
+				"Hagbound",
+				"Hex Channeler",
+				"Ley Line Guardian",
+				"Elemental Witch",
+				"Witch of the Veil",
+				"Hag of Gyronna"
+				],
+			"Wizard" : 
+				["Scroll Savant", 
+				"Arcane Bomber", 
+				"Thassilonian Specialist",
+				"Exploiter Wizard",
+				"Elemental Specialist",
+				"Spell Master",
+				"Cruoromancer",
+				"Shadowcaster" 
+				]
+		},
+	}
+};
+
+
+const games_array = [bg3_data, sunderfolk_data, solasta_data, roguetrader_data, pillars1_data, deadfire_data, kingmaker_data, wrathoftherighteous_data];
